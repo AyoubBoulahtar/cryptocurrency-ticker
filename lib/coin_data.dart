@@ -1,4 +1,5 @@
 import 'package:bitcoin_ticker/coin_service.dart';
+import 'package:bitcoin_ticker/config.dart';
 
 const List<String> currenciesList = [
   'AUD',
@@ -29,8 +30,6 @@ const List<String> cryptoList = [
   'ETH',
   'LTC',
 ];
-
-const String apiKey = 'DB601350-351A-43DC-B15E-62FCB24EBF9C';
 
 class CoinData {
   Future<dynamic> getCoinData(String currency) async {
